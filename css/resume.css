@@ -182,7 +182,7 @@ p {
 /* HEADER */
 
 .header {
-    background-image: url('../img/Background3.jpg');
+    background-image: url('../img/Background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -272,8 +272,10 @@ p {
 }
 
 .projects .card img {
+    object-fit: contain;
     width: 100%;
     max-width: 325px;
+    max-height: 160px;
     height: auto;
     margin: 0 auto 16px;
 }
@@ -399,7 +401,7 @@ p {
 }
 
 .skills .skill-card {
-    background-image: url('../img/Background3.jpg');
+    background-image: url('../img/Background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #060003;
