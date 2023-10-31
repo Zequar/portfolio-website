@@ -1,39 +1,40 @@
-import { TypeAnimation } from 'react-type-animation';
-import './App.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { Routes, Route, Link } from 'react-router-dom'
+import Home from './pages/Home'
+import About from './pages/About'
+import Projects from './pages/Projects'
+import Contact from './pages/Contact'
+import Blog from './pages/Blog'
 
-function App() {
+import '@fontsource/roboto/300.css'
+import '@fontsource/roboto/400.css'
+import '@fontsource/roboto/500.css'
+import '@fontsource/roboto/700.css'
+
+export default function App() {
   return (
-    <>
-      <h1>Hi, I'm <span>Martin</span></h1>
-      <h2><TypeAnimation
-      sequence={[
-        // Same substring at the start will only be typed out once, initially
-        'Full Stack',
-        1500, // wait 1s before replacing "Mice" with "Hamsters"
-        'Blockchain',
-        1500,
-        'Web 3',
-        1500,
-        'Front-End',
-        1500
-      ]}
-      wrapper="span"
-      speed={50}
-      cursor={false}
-      repeat={Infinity}
-    /> Developer</h2>
-      <div className="main-page-buttons">
-        <button>
-            <FontAwesomeIcon icon={faGithub} /> Projects
-        </button>
-        <button>
-            <FontAwesomeIcon icon={faGithub} /> About
-        </button>
-      </div>
-    </>
+    <div>
+      {/* Routes nest inside one another. Nested route paths build upon
+            parent route paths, and nested route elements render inside
+            parent route elements. See the note about <Outlet> below. */}
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="projects" element={<Projects />} />
+        <Route path="blog" element={<Blog />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="*" element={<NoMatch />} />
+      </Routes>
+    </div>
   )
 }
 
-export default App
+function NoMatch() {
+  return (
+    <div>
+      <h2>Nothing to see here!</h2>
+      <p>
+        <Link to="/">Go to the home page</Link>
+      </p>
+    </div>
+  )
+}

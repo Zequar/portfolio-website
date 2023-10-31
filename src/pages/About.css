@@ -1,0 +1,30 @@
+h1 {
+  top: 200px;
+  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.8);
+}
+
+main {
+  background-color: rgba(0, 0, 0);
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 20px;
+  max-width: 60vw;
+  text-align: justify;
+}
+
+.specialty-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: left;
+}
+
+.specialty {
+  background-color: rgba(20, 20, 20);
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 700;
+}
