@@ -17,7 +17,8 @@ const NavigationButton = () => {
     if (
       event &&
       event.type === 'keydown' &&
-      (event.key === 'Tab' || event.key === 'Shift')
+      (event as KeyboardEvent).key === 'Tab' ||
+      (event as KeyboardEvent).key === 'Shift'
     ) {
       return;
     }
@@ -63,7 +64,7 @@ const NavigationButton = () => {
 
   return (
     <div>
-      <Button onClick={toggleDrawer(true)}>Open Menu</Button>
+      <Button onClick={() => toggleDrawer(true)}>Open Menu</Button>
       <Drawer anchor="right" open={isDrawerOpen} onClose={toggleDrawer(false)}>
         {list}
       </Drawer>
