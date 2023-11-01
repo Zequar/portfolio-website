@@ -30,17 +30,15 @@ function Home() {
           />{' '}
           Developer
         </h2>
-        <div  className='projectButtons'>
-        <Link to="/projects">
-          <button>See projects</button>
-        </Link>
-        <Link to="/about">
-          <button>About me</button>
-        </Link>
+        <div className="projectButtons">
+          <Link to="/projects">
+            <button>See projects</button>
+          </Link>
+          <Link to="/about">
+            <button>About me</button>
+          </Link>
         </div>
-        
       </div>
-      
     </>
   )
 }
