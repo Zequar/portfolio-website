@@ -1,9 +1,13 @@
-import { Routes, Route, Link } from 'react-router-dom'
+import { Routes, Route, Link, useLocation } from 'react-router-dom'
+import { useState, useEffect } from 'react';
 import Home from './pages/Home'
 import About from './pages/About'
 import Projects from './pages/Projects'
 import Contact from './pages/Contact'
 import Blog from './pages/Blog'
+import './App.css'
+import { AppProvider } from './AppContext'
+import PageTransition from './PageTransition';
 
 import '@fontsource/roboto/300.css'
 import '@fontsource/roboto/400.css'
@@ -11,20 +15,26 @@ import '@fontsource/roboto/500.css'
 import '@fontsource/roboto/700.css'
 
 export default function App() {
+  const location = useLocation();
+  const [key, setKey] = useState<string | undefined>(location.key);
+
+  useEffect(() => {
+    setKey(location.key);
+  }, [location.key]);
+
   return (
-    <div>
-      {/* Routes nest inside one another. Nested route paths build upon
-            parent route paths, and nested route elements render inside
-            parent route elements. See the note about <Outlet> below. */}
-      <Routes>
-        <Route index element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="projects" element={<Projects />} />
-        <Route path="blog" element={<Blog />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="*" element={<NoMatch />} />
-      </Routes>
-    </div>
+    <AppProvider>
+      <PageTransition in={true} timeout={300} key={key}>
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="blog" element={<Blog />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NoMatch />} />
+        </Routes>
+      </PageTransition>
+    </AppProvider>
   )
 }
 

@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import {
   Button,
   List,
@@ -19,6 +18,7 @@ import {
 import { Link } from 'react-router-dom'
 import { IconDefinition } from '@fortawesome/free-solid-svg-icons'
 import Logo from '../../assets/logo2spi.svg'
+import { useAppContext } from '../../AppContext'
 
 const NavigationItem = ({
   to,
@@ -29,8 +29,13 @@ const NavigationItem = ({
   icon: IconDefinition
   title: string
 }) => {
+  const { setIsDrawerOpen } = useAppContext()
+
   return (
     <ListItemButton
+      onClick={() => {
+        setIsDrawerOpen(false)
+      }}
       sx={{
         backgroundColor: 'rgb(0,0,0,0.7)',
         backdropFilter: 'blur(10px)',
@@ -60,7 +65,7 @@ const NavigationItem = ({
 }
 
 const NavigationButton = () => {
-  const [isDrawerOpen, setDrawerOpen] = useState(false)
+  const { isDrawerOpen, setIsDrawerOpen } = useAppContext()
 
   const drawerContentStyle = {
     marginTop: '100px', // Add padding to the drawer content as needed
@@ -114,11 +119,12 @@ const NavigationButton = () => {
           top: '3rem',
           zIndex: '999',
         }}
-        onClick={() => setDrawerOpen(!isDrawerOpen)}
+        onClick={() => setIsDrawerOpen(!isDrawerOpen)}
       >
         <FontAwesomeIcon icon={isDrawerOpen ? faForward : faBars} size="3x" />
       </Button>
       <SwipeableDrawer
+        hideBackdrop={true}
         PaperProps={{
           sx: {
             backgroundColor: 'transparent',
@@ -127,14 +133,13 @@ const NavigationButton = () => {
             maxWidth: '100%',
           },
         }}
-        hideBackdrop={true}
         sx={{
           zIndex: '998',
         }}
         anchor={isDrawerOpen ? 'left' : 'right'}
         open={isDrawerOpen}
-        onClose={() => setDrawerOpen(false)}
-        onOpen={() => setDrawerOpen(true)}
+        onClose={() => setIsDrawerOpen(false)}
+        onOpen={() => setIsDrawerOpen(true)}
       >
         {list}
       </SwipeableDrawer>
