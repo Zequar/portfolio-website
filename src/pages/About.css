@@ -10,14 +10,13 @@ main {
   border-radius: 20px;
   max-width: 50vw;
   text-align: justify;
-  
 }
 
 @media (max-width: 768px) {
-    main {
-      margin: 0;
-      min-width: 70vw;
-    }
+  main {
+    margin: 0;
+    min-width: 70vw;
+  }
 }
 
 .specialty-list {

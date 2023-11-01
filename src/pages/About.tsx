@@ -5,10 +5,12 @@ import {
   faEthereum,
   faNodeJs,
 } from '@fortawesome/free-brands-svg-icons'
+import NavigationButton from './components/NavigationButton'
 
 function About() {
   return (
     <div>
+      <NavigationButton />
       <h1>Who is he ?</h1>
       <main>
         <p>
