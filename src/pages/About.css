@@ -8,8 +8,16 @@ main {
   margin: 2rem;
   padding: 2rem;
   border-radius: 20px;
-  max-width: 60vw;
+  max-width: 50vw;
   text-align: justify;
+  
+}
+
+@media (max-width: 768px) {
+    main {
+      margin: 0;
+      min-width: 70vw;
+    }
 }
 
 .specialty-list {

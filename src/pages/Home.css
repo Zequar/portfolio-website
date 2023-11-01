@@ -29,10 +29,6 @@ body {
   flex-direction: column;
   gap: 0.25rem;
   min-width: 8rem;
-}
-
-.carousel {
-  width: 400px;
-  height: 200px;
-  background-color: grey;
+  color: white;
+  align-items: center;
 }

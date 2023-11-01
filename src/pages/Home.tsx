@@ -8,10 +8,12 @@ import {
   faStar,
 } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
+import NavigationButton from './components/Menu'
 
 function Home() {
   return (
     <>
+      <NavigationButton/>
       <h1>
         Hi, I'm <b>Martin</b>
       </h1>
