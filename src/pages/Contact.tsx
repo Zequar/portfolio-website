@@ -4,9 +4,9 @@ function Contact() {
   const calendlyLink = 'https://calendly.com/zequar/introducing-meeting' // Replace with your Calendly scheduling link
 
   return (
-    <div>
+    <div className="homeWrapper">
       <NavigationButton />
-      <h2>Contact Me</h2>
+      <h1>Contact Me</h1>
       <p>
         If you'd like to schedule a call with me, you can do so by clicking the
         link below:

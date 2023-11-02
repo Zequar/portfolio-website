@@ -14,15 +14,21 @@ header {
 
 body {
   background-color: rgba(0, 0, 0, 0.6);
+  color: white;
   min-height: 100vh;
+}
+
+button {
+  color: white;
 }
 
 .homeWrapper {
   margin: 8rem 0;
-  width: 100vw;
+  width: calc(100vw - 2rem);
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 1rem;
 }
 
 .homeTitle {
