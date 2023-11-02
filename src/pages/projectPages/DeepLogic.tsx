@@ -1,13 +1,13 @@
 import NavigationButton from '../components/NavigationButton'
+import ProjectTemplate from './ProjectTemplate'
+import { deepLogicProjectData } from './ProjectsData'
 
 function DeepLogic() {
   return (
     <div className="homeWrapper">
       <NavigationButton />
       <h1>DeepLogic</h1>
-      <main>
-        <p className="introduction">DeepLogic</p>
-      </main>
+      <ProjectTemplate projectData={deepLogicProjectData} />
     </div>
   )
 }

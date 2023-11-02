@@ -14,7 +14,7 @@ const ProjectTemplate: React.FC<{ projectData: ProjectDataInterface }> = (
         <div className="project-info">
           <h2>{projectData.title}</h2>
           <p>{projectData.subtitle}</p>
-          <p>{projectData.date}</p>
+          <p dangerouslySetInnerHTML={{ __html: projectData.date }}></p>
         </div>
       </div>
       <hr />

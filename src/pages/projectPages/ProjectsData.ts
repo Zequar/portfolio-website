@@ -122,3 +122,40 @@ export const maskottProjectData: ProjectDataInterface = {
   title: 'Maskott',
   subtitle: 'Full-Time Contract',
 }
+
+export const deepLogicProjectData: ProjectDataInterface = {
+  testimonials: [
+    {
+      referent: 'Stéphane Barbier',
+      referentRole: 'Founder and President of Deep-Logic',
+      testimonialText: `...`,
+      referentPictureUrl:
+        'https://media.licdn.com/dms/image/C4D03AQFGsp_1v7jivg/profile-displayphoto-shrink_800_800/0/1609803669665?e=1704326400&v=beta&t=pCIoxpSNkBaKRyPpRCiPsSJeVDgS2EURU6O0CxnzrIc',
+      linkedInUrl: 'https://www.linkedin.com/in/stefbbr/',
+    }
+  ],
+  tags: [
+    'C#',
+    '.NET',
+    '.Net Core',
+    'Xamarin',
+    'Mobile Development',
+    'AI',
+    'UI / UX', 
+    'Figma',
+    'MongoDB',
+  ],
+  bodyDescription: `<br/>`,
+  contextDescription: `<br/>`,
+  responsibilities: [
+    'Full Stack mobile development in Xamarin and MongoDB',
+    'Digitial conceptualisation of a hyper-personnalized cooking app',
+    'UI / UX design of a mobile app from scratch with Figma',
+    'Front-End mobile app development with Xamarin / C# / .NET',
+  ],
+  pictureUrl:
+    'https://media.licdn.com/dms/image/C4D0BAQFsi0YLteCanw/company-logo_200_200/0/1576335715495?e=1706745600&v=beta&t=Mf0n2mCgDhZ7_9-icfmgBjS4IuLfW4Cy5OLp1rGNnM4',
+  date: `2020 March - 2020 July<br/> 2021 September - 2022 February`,
+  title: 'DeepLogic',
+  subtitle: 'Internships',
+}
