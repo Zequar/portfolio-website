@@ -6,9 +6,7 @@ function DecentralizedExchange() {
       <NavigationButton />
       <h1>DecentralizedExchange</h1>
       <main>
-        <p className="introduction">
-          DecentralizedExchange
-        </p>
+        <p className="introduction">DecentralizedExchange</p>
       </main>
     </div>
   )

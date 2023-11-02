@@ -6,9 +6,7 @@ function StreamManager() {
       <NavigationButton />
       <h1>StreamManager</h1>
       <main>
-        <p className="introduction">
-          StreamManager
-        </p>
+        <p className="introduction">StreamManager</p>
       </main>
     </div>
   )

@@ -6,9 +6,7 @@ function Umanis() {
       <NavigationButton />
       <h1>Umanis</h1>
       <main>
-        <p className="introduction">
-          Umanis
-        </p>
+        <p className="introduction">Umanis</p>
       </main>
     </div>
   )

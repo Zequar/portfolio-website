@@ -6,9 +6,7 @@ function DeepLogic() {
       <NavigationButton />
       <h1>DeepLogic</h1>
       <main>
-        <p className="introduction">
-          DeepLogic
-        </p>
+        <p className="introduction">DeepLogic</p>
       </main>
     </div>
   )

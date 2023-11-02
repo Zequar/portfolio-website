@@ -36,11 +36,14 @@ export default function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
-          <Route path="projects" element={<Projects />}/>
+          <Route path="projects" element={<Projects />} />
           <Route path="blog" element={<Blog />} />
           <Route path="contact" element={<Contact />} />
           <Route path="conity" element={<Conity />} />
-          <Route path="decentralized-exchange" element={<DecentralizedExchange />} />
+          <Route
+            path="decentralized-exchange"
+            element={<DecentralizedExchange />}
+          />
           <Route path="deep-logic" element={<DeepLogic />} />
           <Route path="live-extension" element={<LiveExtension />} />
           <Route path="maskott" element={<Maskott />} />

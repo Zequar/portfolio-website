@@ -6,9 +6,7 @@ function LiveExtension() {
       <NavigationButton />
       <h1>LiveExtension</h1>
       <main>
-        <p className="introduction">
-          LiveExtension
-        </p>
+        <p className="introduction">LiveExtension</p>
       </main>
     </div>
   )
