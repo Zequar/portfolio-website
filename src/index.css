@@ -12,6 +12,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   font-family: 'Lilita One', sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -25,31 +26,33 @@ a:hover {
 
 .project-list {
   max-width: 50vw;
-  overflow-x: hidden;
   margin: auto;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .projects-row {
   background-color: rgb(0, 0, 0, 0.7);
   backdrop-filter: blur(10px);
-  max-height: 60px;
   border: solid transparent 1px;
   transition: border-color 0.5s;
   display: flex;
   justify-content: space-between;
-  padding: 2rem;
   flex-direction: row;
   text-overflow: ellipsis;
   border-bottom: #fff solid 1px;
-}
-
-.projects-row-left {
-  display: flex;
-  align-items: center;
+  overflow: hidden;
+  padding: 2rem; 
 }
 
 ul, ol {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 0;
   padding: 0;
 }
 
@@ -57,11 +60,6 @@ ul, ol {
   background-color: rgb(0, 0, 0, 0.3);
   border-color: #646cff;
   color: white;
-}
-
-body {
-  margin: 0;
-  display: flex;
 }
 
 h1 {
@@ -127,3 +125,19 @@ b {
 ::selection {
   background-color: #646cff; /* Blue color */
 }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow-x: hidden; /* To prevent horizontal scrolling */
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  min-height: 100vh;
+}
+

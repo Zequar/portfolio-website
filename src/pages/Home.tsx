@@ -8,7 +8,7 @@ function Home() {
     <>
       <NavigationButton />
       <div className="homeWrapper">
-        <h1 className="homeTitle">
+        <h1>
           Hi, I'm <b>Martin</b>
         </h1>
         <h2>

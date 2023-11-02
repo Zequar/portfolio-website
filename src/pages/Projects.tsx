@@ -3,13 +3,13 @@ import NavigationButton from './components/NavigationButton'
 
 const ProjectItem = ({ to, title }: { to: string; title: string }) => {
   return (
-    <li>
-      <Link to={to}>
-        <div className="projects-row">
-            <h2 className="project-title">{title}</h2>
-        </div>
-      </Link>
-    </li>
+    <Link to={to} >
+      <li className="projects-row">
+          <div >
+              <h2 className="project-title">{title}</h2>
+          </div>
+      </li>
+    </Link>
   )
 }
 
