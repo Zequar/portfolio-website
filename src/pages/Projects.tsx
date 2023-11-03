@@ -19,19 +19,15 @@ function Projects() {
       <NavigationButton />
       <div className="homeWrapper">
         <h1>Projects</h1>
+        <ul className="project-list">
+          <ProjectItem title="Maskott" to="/maskott" />
+          <ProjectItem title="Decentralized Exchange" to="/exchange" />
+          <ProjectItem title="Zack Nani Live Extension" to="/live-extension" />
+          <ProjectItem title="Stream Manager" to="/stream-manager" />
+          <ProjectItem title="Conity" to="/conity" />
+          <ProjectItem title="Deep-Logic" to="/deep-logic" />
+        </ul>
       </div>
-      <ul className="project-list">
-        <ProjectItem title="Maskott" to="/maskott" />
-        <ProjectItem
-          title="Decentralized Exchange"
-          to="/decentralized-exchange"
-        />
-        <ProjectItem title="Zack Nani Live Extension" to="/live-extension" />
-        <ProjectItem title="Smash Stream Manager" to="/stream-manager" />
-        <ProjectItem title="Umanis" to="/umanis" />
-        <ProjectItem title="Conity" to="/conity" />
-        <ProjectItem title="Deep-Logic" to="/deep-logic" />
-      </ul>
     </div>
   )
 }

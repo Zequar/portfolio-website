@@ -3,11 +3,11 @@ export interface TestimonialDataInterface {
   referentRole: string
   testimonialText: string
   referentPictureUrl: string
-  linkedInUrl: string
+  linkedInUrl?: string
 }
 
 export interface ProjectDataInterface {
-  testimonials: TestimonialDataInterface[]
+  testimonials?: TestimonialDataInterface[]
   tags: string[]
   bodyDescription: string | TrustedHTML
   contextDescription: string | TrustedHTML
@@ -16,6 +16,7 @@ export interface ProjectDataInterface {
   date: string
   title: string
   subtitle: string
+  images?: string[]
 }
 
 export const conityProjectData: ProjectDataInterface = {
@@ -31,8 +32,7 @@ export const conityProjectData: ProjectDataInterface = {
     {
       referent: 'Thomas Raquin',
       referentRole: 'President at Conity',
-      testimonialText:
-        '...',
+      testimonialText: '...',
       referentPictureUrl:
         'https://media.licdn.com/dms/image/C4E03AQHTHUBgrqJWSg/profile-displayphoto-shrink_800_800/0/1516783408268?e=1704326400&v=beta&t=k2bSeqBnHoEhciALCJwfJUv31gIowehQAENlTeduxDc',
       linkedInUrl: 'https://www.linkedin.com/in/thomas-raquin-4b723395/',
@@ -82,8 +82,7 @@ export const maskottProjectData: ProjectDataInterface = {
     {
       referent: 'Thomas Mauconduit',
       referentRole: 'Lead Developer at Maskott',
-      testimonialText:
-        '...',
+      testimonialText: '...',
       referentPictureUrl:
         'https://media.licdn.com/dms/image/C5603AQE_QfHkH5-PZw/profile-displayphoto-shrink_800_800/0/1561012565390?e=1704326400&v=beta&t=pHXUuoTrihO43wcZlxyj1NIai7DZVsaHwuuX9C8mTmg',
       linkedInUrl: 'https://www.linkedin.com/in/tmauc/',
@@ -132,21 +131,23 @@ export const deepLogicProjectData: ProjectDataInterface = {
       referentPictureUrl:
         'https://media.licdn.com/dms/image/C4D03AQFGsp_1v7jivg/profile-displayphoto-shrink_800_800/0/1609803669665?e=1704326400&v=beta&t=pCIoxpSNkBaKRyPpRCiPsSJeVDgS2EURU6O0CxnzrIc',
       linkedInUrl: 'https://www.linkedin.com/in/stefbbr/',
-    }
+    },
   ],
   tags: [
+    'Mobile Development',
+    'iOS',
+    'Android',
     'C#',
     '.NET',
     '.Net Core',
     'Xamarin',
-    'Mobile Development',
     'AI',
-    'UI / UX', 
+    'UI / UX',
     'Figma',
     'MongoDB',
   ],
-  bodyDescription: `<br/>`,
-  contextDescription: `<br/>`,
+  bodyDescription: `The objective of this emerging startup was to establish a proof-of-concept project aimed at validating the feasibility of a data structure replicable across multiple domains. To achieve this goal, we made the strategic decision to launch a highly customizable cooking application. Our vision encompassed leveraging artificial intelligence to provide meals that were tailored precisely to each customer's preferences and requirements.`,
+  contextDescription: `The objective of this emerging startup was to establish a proof-of-concept project aimed at validating the feasibility of a data structure replicable across multiple domains. To achieve this goal, we made the strategic decision to launch a highly customizable cooking application. Our vision encompassed leveraging artificial intelligence to provide meals that were tailored precisely to each customer's preferences and requirements.`,
   responsibilities: [
     'Full Stack mobile development in Xamarin and MongoDB',
     'Digitial conceptualisation of a hyper-personnalized cooking app',
@@ -158,4 +159,194 @@ export const deepLogicProjectData: ProjectDataInterface = {
   date: `2020 March - 2020 July<br/> 2021 September - 2022 February`,
   title: 'DeepLogic',
   subtitle: 'Internships',
+}
+
+export const exchangeProjectData: ProjectDataInterface = {
+  images: [
+    'https://cdn.discordapp.com/attachments/909785310039253022/1169945708820967465/DEXScreenshot.png?ex=65573fd9&is=6544cad9&hm=5e1eb8bd3a634544f8c9439786f3ff083f4690e1b1965fcc9abf709d696e8f2f&',
+  ],
+  tags: [
+    'Smart Contracts',
+    'Solidity',
+    'Blockchain',
+    'Web3',
+    'React.js',
+    'JavaScript',
+    'Hardhat',
+    'ethers.js',
+    'MetaMask',
+  ],
+  bodyDescription: `
+  Here are the development steps of my DEX project from scratch and expected features I was able to fulfill.<br/><br/>
+  
+  <b>Metamask Integration</b>: Seamless integration with Metamask for secure and user-friendly blockchain connectivity.<br/><br/>
+  <b>User Connection</b>: Implement a user-friendly 'Connect' button for hassle-free account linkage.<br/><br/>
+  
+  <b>Blockchain Network Selection</b>: Enable users to choose their preferred blockchain or test network through a 'Network Select' feature.<br/><br/>
+  
+  <b>Market Selection</b>: Facilitate market selection, allowing users to choose their preferred tokens with the 'Select Market' button.<br/><br/>
+  
+  <b>Deposit Mechanism</b>: Create a secure and efficient deposit system for users' assets.<br/><br/>
+  
+  <b>Order Creation</b>: Develop an intuitive order creation system for trading.<br/><br/>
+  
+  <b>Token Trading</b>: Enable users to seamlessly trade tokens on the platform.<br/><br/>
+  
+  <b>Candlestick Chart</b>: Implement a user-friendly candlestick chart for market analysis.<br/><br/>
+  
+  <b>Developer Fees</b>: Establish a mechanism where transaction fees contribute to the platform's development and sustainability.<br/><br/>
+  
+  <b>User Listings</b>: Allow users to list cryptocurrencies for buying or selling among the available options.<br/><br/>
+  
+  <b>Website Development</b>: Construct a dynamic and responsive website using React.<br/><br/>
+  
+  <b>Blockchain Setup</b>: Configure and deploy the blockchain on the Hardhat development environment.<br/><br/>
+  
+  <b>Smart Contracts</b>: Develop a set of smart contracts, including exchanges and tokens.<br/><br/>
+  
+  <b>Configuration</b>: Initial setup and configuration of the entire platform.<br/><br/>
+  
+  <b>Smart Contract Integration</b>: Integration of smart contracts for tokens and exchanges into the platform.<br/><br/>
+  
+  <b>Testing</b>: Thoroughly test the functionality and security of the platform.<br/><br/>
+  
+  <b>Front-end Development</b>: Build a user-friendly and responsive front-end using React and Redux.<br/><br/>
+  
+  <b>Ethers Integration</b>: Establish Ether.js for seamless communication between the front-end and back-end.<br/><br/>
+  
+  <b>Deployment</b>: Deploy the platform on the live blockchain network for public access.<br/><br/>
+  
+  These milestones represent the comprehensive development process for our project.<br/>`,
+  contextDescription: `Decentralized Exchange (DEX): A Cryptocurrency Trading Platform
+
+  Dissimilar to mainstream exchanges such as Binance, our platform operates on the foundation of smart contracts, ensuring complete autonomy within the blockchain ecosystem.<br/>
+  
+  Purpose:<br/><br/>
+  
+  A Real-world Endeavor: We embarked on this venture to create a practical and impactful project.<br/>
+  Embracing DeFi: Our platform contributes to the growing realm of Decentralized Finance (DeFi).<br/>
+  A Launchpad for Innovation: It provides a solid foundation for building diverse applications and leveraging the limitless possibilities of blockchain technology.<br/>`,
+  responsibilities: [
+    'Learning technologies like Solidity, Hardhat, Ethers.js and MetaMask',
+    'Smart Contract Token and Exchange development with Solidity',
+    'UI / UX responsive design',
+    'Full Stack Web Development in React.js',
+    'Deployment to testnets',
+    'Unit Testing the whole platform',
+  ],
+  pictureUrl:
+    'https://cdn.discordapp.com/attachments/909785310039253022/1169945708820967465/DEXScreenshot.png?ex=65573fd9&is=6544cad9&hm=5e1eb8bd3a634544f8c9439786f3ff083f4690e1b1965fcc9abf709d696e8f2f&',
+  date: `2023`,
+  title: 'Decentralized Cryptocurrency Exchange',
+  subtitle: 'Personal Project',
+}
+
+export const liveExtensionProjectData: ProjectDataInterface = {
+  images: [
+    'https://media.discordapp.net/attachments/909785310039253022/1169995117453652018/ZackScreenshot.PNG?ex=65576ddd&is=6544f8dd&hm=6d5b9af961607d5422549a6f4fb0d9db1df71dbc046ba65603673c79367dda23&=&width=711&height=670',
+  ],
+  tags: [
+    'Chrome Extension',
+    'HTML',
+    'JavaScript',
+    'React.js',
+    'GraphQL',
+    'Twitch',
+    'YouTube',
+    'API',
+  ],
+  testimonials: [
+    {
+      referentPictureUrl:
+        'https://yt3.googleusercontent.com/ytc/APkrFKZ9dIxjSJi5Ee_VgHAYtOw4kWwn0jI6ShxO5o9YCA=s900-c-k-c0x00ffffff-no-rj',
+      referent: 'Zack Nani',
+      referentRole: 'Streamer & Youtuber',
+      testimonialText: 'Wow pas mal',
+    },
+  ],
+  bodyDescription: `I began by clarifying the streamer's expectations to identify the desired features. Subsequently, I proposed an initial prototype following prototyping conducted on Figma, and we iterated until we found the perfect solution for my client.<br/><br/>
+
+  Once the design and features were defined, I constructed the HTML page and implemented various notification features using the YouTube and Twitch APIs. This enabled viewers to receive updates every minute, indicating the release of a new video or the start of Zack's live stream.<br/><br/>
+  
+  By employing different colors for the icon and notifications, we effectively kept users informed at all times, allowing them to join with a single click from their browser and ensuring they didn't miss any of his valuable content.`,
+  contextDescription: `In order to enhance and stabilize his viewership, renowned streamer Zack Nani required a Google Chrome extension. This extension allowed him to provide his dedicated community with real-time notifications on their screens whenever he initiated a live streaming session.`,
+  responsibilities: [
+    'Clarified client expectations',
+    'Designed and developed a Chrome extension',
+    'Frontend made with (HTML, CSS, JavaScript)',
+    'Backend (YouTube and Twitch API via GraphQL)',
+    'Published the extension on the Chrome Web Store for user access',
+  ],
+  pictureUrl:
+    'https://cdn.discordapp.com/attachments/909785310039253022/1169995492734812160/icon128.png?ex=65576e36&is=6544f936&hm=c6cd1ae4f39bc034fbbc9f71175d018ada183fbb18c66b667d95afc7b6f6855c&',
+  date: `2023`,
+  title: 'Zack Nani Live Extension',
+  subtitle: 'Freelance Project',
+}
+
+export const streamManagerProjectData: ProjectDataInterface = {
+  images: [
+    'https://cdn.discordapp.com/attachments/909785310039253022/1170005574017101975/NodeCGScreen.PNG?ex=6557779a&is=6545029a&hm=e0525c7503f376d88e4097a502b60d0c555792d77ffebadaca279bf688cf0372&',
+  ],
+  tags: [
+    'Twitch Streaming Tools',
+    'Graphical programming',
+    'nodeCG',
+    'start GG API',
+    'HTML',
+    'JavaScript',
+    'React.js',
+    'GraphQL',
+    'Twitch',
+    'API',
+    'Postman',
+  ],
+  testimonials: [
+    {
+      referentPictureUrl:
+        'https://pbs.twimg.com/profile_images/1539688296909004802/XDwY2O0C_400x400.jpg',
+      referent: 'Florian Gibault',
+      referentRole: 'Stream Manager for Gametek',
+      testimonialText: 'Wow pas mal',
+    },
+  ],
+  bodyDescription: `<b>Requirement Clarification</b>: I initiated in-depth discussions with stream managers to understand their specific needs and the goals of the project. By thoroughly clarifying the specifications, we laid a solid foundation for the development process.<br/><br/>
+
+  <b>Dashboard Website Development</b>: I took on the challenge of designing and developing a comprehensive dashboard website from scratch. This involved creating a user-friendly interface that provided advanced functionality for managing and viewing esports tournaments.<br/><br/>
+  
+  <b>Overlay Creation</b>: To enhance the viewer experience, I designed and developed overlay web pages. These overlays presented real-time information in a visually appealing manner, immersing esports fans in the gaming action.<br/><br/>
+  
+  <b>Modular Overlay Design</b>: For greater flexibility and seamless integration with OBS, I designed modular overlays. By utilizing tools like Photoshop, I ensured that scene transitions during streaming were smooth and captivating.<br/><br/>
+  
+  <b>Frontend Development</b>: The frontend of the website was my responsibility. I implemented it using a combination of HTML, CSS, JavaScript, and React, guaranteeing that users had access to a responsive and intuitive platform.<br/><br/>
+  
+  <b>Backend Integration</b>: I integrated the backend using the Start.gg API through GraphQL. This empowered the website to deliver up-to-the-minute data on scores, player tags, team details, stream queues, and match information. This made the platform highly interactive and engaging for the esports community.<br/><br/>
+  
+  <b>Deployment</b>: After extensive development and testing, I successfully deployed the website. This made it easily accessible to viewers, stream managers, and tournament participants worldwide, ensuring that they could enjoy a seamless and feature-rich experience.<br/><br/>
+  
+  <b>Key Features</b>:<br/><br/>
+  
+  I ensured real-time score updates were an integral part of the platform.<br/>
+  Player tags were meticulously implemented for easy identification.<br/>
+  Team information for players was made readily available.<br/>
+  A stream queue management feature was added for enhanced control.<br/>
+  The platform provided in-depth match information for the convenience of both viewers and participants.<br/>
+  By taking on this project, I aimed to elevate the esports streaming experience, making it more immersive and interactive for all stakeholders involved.<br/><br/>
+  
+  By employing different colors for the icon and notifications, we effectively kept users informed at all times, allowing them to join with a single click from their browser and ensuring they didn't miss any of his valuable content.`,
+  contextDescription: `In Esports and Smash tournaments, live streaming is a standard practice to reach a broader audience and enhance the competitive spirit for both players and spectators. Typically, for setting up such streams, we rely on a director who operates OBS to switch scenes, update player scores, and provide match-related information, all aimed at ensuring an optimal viewer experience. The objective of this project was to streamline the responsibilities of these directors by automating a significant portion of their tasks through the start.gg API, the platform where tournaments take place.`,
+  responsibilities: [
+    'Clarified specs with stream managers',
+    'Designed and developed a dashboard website',
+    'Designed and developed overlays web pages',
+    'Designed modular overlays with Photoshop for OBS',
+    'Frontend made with (HTML, CSS, JavaScript, React)',
+    'Backend (Start gg API via GraphQL)',
+    'Deployed the website for easier access',
+  ],
+  pictureUrl:
+    'https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Open_Broadcaster_Software_Logo.png/2048px-Open_Broadcaster_Software_Logo.png',
+  date: `2022-2023`,
+  title: 'Stream Manager',
+  subtitle: 'Personal Project',
 }

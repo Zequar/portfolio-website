@@ -1,13 +1,13 @@
 import NavigationButton from '../components/NavigationButton'
+import ProjectTemplate from './ProjectTemplate'
+import { streamManagerProjectData } from './ProjectsData'
 
 function StreamManager() {
   return (
     <div className="homeWrapper">
       <NavigationButton />
       <h1>StreamManager</h1>
-      <main>
-        <p className="introduction">StreamManager</p>
-      </main>
+      <ProjectTemplate projectData={streamManagerProjectData} />
     </div>
   )
 }

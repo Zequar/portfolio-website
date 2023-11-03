@@ -49,31 +49,50 @@ const ProjectTemplate: React.FC<{ projectData: ProjectDataInterface }> = (
         <h3>Description</h3>
         <p dangerouslySetInnerHTML={{ __html: projectData.bodyDescription }} />
       </section>
-      <hr />
-      <section>
-        <h3>People I've worked with</h3>
-        {projectData.testimonials.map(
-          (testimonialData: TestimonialDataInterface, index: number) => (
-            <a href={testimonialData.linkedInUrl} target="_blank">
-              <div className="testimonies-section" key={index}>
-                <div className="testimonial-pic">
-                  <img
-                    src={testimonialData.referentPictureUrl}
-                    alt="testimonier"
-                  />
-                </div>
-                <blockquote className="testimonial">
-                  {testimonialData.testimonialText}
-                  <cite>
-                    <b>{testimonialData.referent}</b>,{' '}
-                    {testimonialData.referentRole}
-                  </cite>
-                </blockquote>
-              </div>
-            </a>
-          )
-        )}
-      </section>
+      {projectData.testimonials ? (
+        <>
+          <hr />
+          <section>
+            <h3>People I've worked with</h3>
+            {projectData.testimonials.map(
+              (testimonialData: TestimonialDataInterface, index: number) => (
+                <a href={testimonialData.linkedInUrl} target="_blank">
+                  <div className="testimonies-section" key={index}>
+                    <div className="testimonial-pic">
+                      <img
+                        src={testimonialData.referentPictureUrl}
+                        alt="testimonier"
+                      />
+                    </div>
+                    <blockquote className="testimonial">
+                      {testimonialData.testimonialText}
+                      <cite>
+                        <b>{testimonialData.referent}</b>,{' '}
+                        {testimonialData.referentRole}
+                      </cite>
+                    </blockquote>
+                  </div>
+                </a>
+              )
+            )}
+          </section>
+        </>
+      ) : (
+        ''
+      )}
+      {projectData.images ? (
+        <>
+          <hr />
+          <section className="image-section">
+            <h3>Images</h3>
+            {projectData.images.map((url: string, index: number) => (
+              <img className="project-image" src={url} alt={'image' + index} />
+            ))}
+          </section>
+        </>
+      ) : (
+        ''
+      )}
     </div>
   )
 }

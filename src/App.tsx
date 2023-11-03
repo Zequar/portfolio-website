@@ -6,12 +6,11 @@ import Projects from './pages/Projects'
 import Contact from './pages/Contact'
 import Blog from './pages/Blog'
 import Conity from './pages/projectPages/Conity'
-import DecentralizedExchange from './pages/projectPages/DecentralizedExchange'
+import Exchange from './pages/projectPages/Exchange'
 import DeepLogic from './pages/projectPages/DeepLogic'
 import LiveExtension from './pages/projectPages/LiveExtension'
 import Maskott from './pages/projectPages/Maskott'
 import StreamManager from './pages/projectPages/StreamManager'
-import Umanis from './pages/projectPages/Umanis'
 
 import './App.css'
 import { AppProvider } from './AppContext'
@@ -40,15 +39,11 @@ export default function App() {
           <Route path="blog" element={<Blog />} />
           <Route path="contact" element={<Contact />} />
           <Route path="conity" element={<Conity />} />
-          <Route
-            path="decentralized-exchange"
-            element={<DecentralizedExchange />}
-          />
+          <Route path="exchange" element={<Exchange />} />
           <Route path="deep-logic" element={<DeepLogic />} />
           <Route path="live-extension" element={<LiveExtension />} />
           <Route path="maskott" element={<Maskott />} />
           <Route path="stream-manager" element={<StreamManager />} />
-          <Route path="umanis" element={<Umanis />} />
           <Route path="*" element={<NoMatch />} />
         </Routes>
       </PageTransition>
