@@ -1,15 +1,27 @@
 import { Link } from 'react-router-dom'
 import NavigationButton from './components/NavigationButton'
+import { motion as m } from 'framer-motion'
+import { container, item } from './Animations'
 
-const ProjectItem = ({ to, title }: { to: string; title: string }) => {
+const ProjectItem = ({
+  key,
+  to,
+  title,
+}: {
+  key: number
+  to: string
+  title: string
+}) => {
   return (
+    <div className="hidden">
     <Link to={to}>
-      <li className="projects-row">
+      <m.li key={key} variants={item} className="projects-row">
         <div>
-          <h2 className="project-title">{title}</h2>
+          <h2>{title}</h2>
         </div>
-      </li>
+      </m.li>
     </Link>
+    </div>
   )
 }
 
@@ -18,15 +30,32 @@ function Projects() {
     <div>
       <NavigationButton />
       <div className="homeWrapper">
-        <h1>Projects</h1>
-        <ul className="project-list">
-          <ProjectItem title="Maskott" to="/maskott" />
-          <ProjectItem title="Decentralized Exchange" to="/exchange" />
-          <ProjectItem title="Zack Nani Live Extension" to="/live-extension" />
-          <ProjectItem title="Stream Manager" to="/stream-manager" />
-          <ProjectItem title="Conity" to="/conity" />
-          <ProjectItem title="Deep-Logic" to="/deep-logic" />
-        </ul>
+        <div className="hidden">
+          <m.h1
+            initial={{ y: '-100%', opacity: 0 }}
+            animate={{ y: '0%', opacity: 1 }}
+            transition={{ duration: .5 }}
+          >
+            Projects
+          </m.h1>
+        </div>
+        <m.ul
+          variants={container}
+          animate="show"
+          initial="hidden"
+          className="project-list"
+        >
+          <ProjectItem key={1} title="Maskott" to="/maskott" />
+          <ProjectItem key={2} title="Decentralized Exchange" to="/exchange" />
+          <ProjectItem
+            key={3}
+            title="Zack Nani Live Extension"
+            to="/live-extension"
+          />
+          <ProjectItem key={4} title="Stream Manager" to="/stream-manager" />
+          <ProjectItem key={5} title="Conity" to="/conity" />
+          <ProjectItem key={6} title="Deep-Logic" to="/deep-logic" />
+        </m.ul>
       </div>
     </div>
   )

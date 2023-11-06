@@ -2,16 +2,21 @@ import { TypeAnimation } from 'react-type-animation'
 import './Home.css'
 import { Link } from 'react-router-dom'
 import NavigationButton from './components/NavigationButton'
+import { motion as m } from 'framer-motion'
 
 function Home() {
   return (
     <>
       <NavigationButton />
       <div className="homeWrapper">
-        <h1>
+        <m.h1 initial={{ y: '-100%', opacity: 0 }}
+            animate={{ y: '0%', opacity: 1 }}
+            transition={{ duration: .5 }}>
           Hi, I'm <b>Martin</b>
-        </h1>
-        <h2>
+        </m.h1>
+        <m.h2 initial={{ y: '-100%', opacity: 0 }}
+            animate={{ y: '0%', opacity: 1 }}
+            transition={{ duration: .5, delay: .2 }}>
           <TypeAnimation
             sequence={[
               'Full Stack',
@@ -27,9 +32,10 @@ function Home() {
             speed={50}
             cursor={false}
             repeat={Infinity}
+            preRenderFirstString={true}
           />{' '}
           Developer
-        </h2>
+        </m.h2>
         <div className="projectButtons">
           <Link to="/projects">
             <button>See projects</button>

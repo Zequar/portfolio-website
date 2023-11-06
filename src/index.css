@@ -46,6 +46,10 @@ a:hover {
   padding: 2rem;
 }
 
+.hidden {
+  overflow: hidden;
+}
+
 ul,
 ol {
   list-style: none;
