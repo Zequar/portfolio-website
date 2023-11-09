@@ -82,7 +82,7 @@ export const maskottProjectData: ProjectDataInterface = {
     {
       referent: 'Thomas Mauconduit',
       referentRole: 'Lead Developer at Maskott',
-      testimonialText: '...',
+      testimonialText: 'Martin a été un excellent collègue durant toute notre collaboration. Il a su m’épauler quand j’en avais besoin et a toujours réussi à résoudre les problématiques qui lui étaient confiées. Je recommande grandement son profil et j’espère avoir l’occasion de retravailler avec lui ',
       referentPictureUrl:
         'https://media.licdn.com/dms/image/C5603AQE_QfHkH5-PZw/profile-displayphoto-shrink_800_800/0/1561012565390?e=1704326400&v=beta&t=pHXUuoTrihO43wcZlxyj1NIai7DZVsaHwuuX9C8mTmg',
       linkedInUrl: 'https://www.linkedin.com/in/tmauc/',
