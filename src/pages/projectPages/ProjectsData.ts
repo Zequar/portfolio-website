@@ -24,7 +24,7 @@ export const conityProjectData: ProjectDataInterface = {
     {
       referent: 'Richard Raduly',
       referentRole: 'CTO at Conity',
-      testimonialText: `...`,
+      testimonialText: `Martin a fait preuve d'une capacité d'apprentissage remarquable et s'est très rapidement intégré à l'équipe. Il a brillamment relevé les défis de notre start-up, en démontrant une maîtrise et une polyvalence qui présagent d'un avenir très prometteur.`,
       referentPictureUrl:
         'https://media.licdn.com/dms/image/D5603AQHgSciRut4pCw/profile-displayphoto-shrink_800_800/0/1680486502917?e=1704326400&v=beta&t=LM0_xMGreInYEBHk8Uh4nT-eKxl4YGdAIEDAGTfU_g4',
       linkedInUrl: 'https://www.linkedin.com/in/r-ichard/',
