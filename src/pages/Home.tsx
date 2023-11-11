@@ -9,14 +9,19 @@ function Home() {
     <>
       <NavigationButton />
       <div className="homeWrapper">
-        <m.h1 initial={{ y: '-100%', opacity: 0 }}
-            animate={{ y: '0%', opacity: 1 }}
-            transition={{ duration: .5 }}>
+        <m.h1
+          initial={{ y: '-100%', opacity: 0 }}
+          animate={{ y: '0%', opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        >
           Hi, I'm <b>Martin</b>
         </m.h1>
-        <m.h2 initial={{ y: '-100%', opacity: 0 }}
-            animate={{ y: '0%', opacity: 1 }}
-            transition={{ duration: .5, delay: .2 }}>
+        <m.h2
+          className="text-2xl"
+          initial={{ y: '-100%', opacity: 0 }}
+          animate={{ y: '0%', opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
           <TypeAnimation
             sequence={[
               'Full Stack',

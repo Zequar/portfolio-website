@@ -87,7 +87,6 @@ const NavigationButton = () => {
       <NavigationItem to="/" icon={faHome} title="Home" />
       <NavigationItem to="/projects" icon={faStar} title="Projects" />
       <NavigationItem to="/about" icon={faHeart} title="About" />
-      <NavigationItem to="/blog" icon={faBook} title="Blog" />
       <NavigationItem to="/contact" icon={faEnvelope} title="Contact" />
     </List>
   )

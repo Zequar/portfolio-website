@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom'
-import NavigationButton from './components/NavigationButton'
+import NavigationButton from '../components/NavigationButton'
 import { motion as m } from 'framer-motion'
-import { container, item } from './Animations'
+import { container, item } from '../Animations'
+import './projects.css'
 
 const ProjectItem = ({
   key,
@@ -13,14 +14,14 @@ const ProjectItem = ({
   title: string
 }) => {
   return (
-    <div className="hidden">
-    <Link to={to}>
-      <m.li key={key} variants={item} className="projects-row">
-        <div>
-          <h2>{title}</h2>
-        </div>
-      </m.li>
-    </Link>
+    <div className="overflow-hidden">
+      <Link to={to}>
+        <m.li key={key} variants={item} className="projects-row">
+          <div>
+            <h2 className="text-2xl">{title}</h2>
+          </div>
+        </m.li>
+      </Link>
     </div>
   )
 }
@@ -30,11 +31,11 @@ function Projects() {
     <div>
       <NavigationButton />
       <div className="homeWrapper">
-        <div className="hidden">
+        <div className="overflow-hidden">
           <m.h1
             initial={{ y: '-100%', opacity: 0 }}
             animate={{ y: '0%', opacity: 1 }}
-            transition={{ duration: .5 }}
+            transition={{ duration: 0.5 }}
           >
             Projects
           </m.h1>
