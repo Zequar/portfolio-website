@@ -194,3 +194,54 @@ hr {
 .book-call-section:hover {
   transform: scale(1.05);
 }
+
+.arrow-hover:hover span:last-child {
+  opacity: 1;
+  transform: translateX(0);
+  width: auto;
+}
+
+.arrow-hover span:last-child {
+  opacity: 0;
+  transform: translateX(-1rem);
+  transition:
+    opacity 0.5s,
+    transform 0.5s,
+    width 0.5s;
+}
+
+a {
+  font-family: 'Poppins';
+}
+
+.arrow-animation::after {
+  content: '>';
+  color: inherit;
+  transition: 400ms;
+  opacity: 0;
+}
+
+.arrow-animation:hover::after {
+  opacity: 1;
+  margin-left: 8px;
+}
+
+.reveal {
+  opacity: 0;
+  transition: 400ms cubic-bezier(0.5, 0, 0, 1);
+}
+
+.reveal-visible {
+  opacity: 1;
+  transition: 800ms cubic-bezier(0.5, 0, 0, 1);
+}
+
+h1 {
+  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.8);
+}
+
+a {
+  text-decoration: underline;
+  text-decoration-color: #646cff;
+  text-underline-offset: 3px;
+}

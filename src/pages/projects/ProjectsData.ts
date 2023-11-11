@@ -129,7 +129,7 @@ export const deepLogicProjectData: ProjectDataInterface = {
     {
       referent: 'Stéphane Barbier',
       referentRole: 'Founder and President of Deep-Logic',
-      testimonialText: `...`,
+      testimonialText: `Martin a réalisé un excellent travail au sein de notre équipe en tant que seul développeur Front. Ses propositions pertinentes ont permis de réaliser une UI moderne et efficace, sans détail laissé au hasard. Ayant toujours à cœur d'offrir la meilleure expérience utilisateur, il a su monter en compétence de manière autonome dans toutes les technos nécessaires. Parfaitement intégré à l'équipe, moteur et très bon développeur, travailler avec Martin a été un honneur et un plaisir. `,
       referentPictureUrl:
         'https://media.licdn.com/dms/image/C4D03AQFGsp_1v7jivg/profile-displayphoto-shrink_800_800/0/1609803669665?e=1704326400&v=beta&t=pCIoxpSNkBaKRyPpRCiPsSJeVDgS2EURU6O0CxnzrIc',
       linkedInUrl: 'https://www.linkedin.com/in/stefbbr/',
