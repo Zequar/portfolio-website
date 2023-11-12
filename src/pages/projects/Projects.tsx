@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import NavigationButton from '../components/NavigationButton'
 import { motion as m } from 'framer-motion'
 import { container, item } from '../Animations'
-import './projects.css'
+import './Projects.css'
 
 const ProjectItem = ({
   key,
