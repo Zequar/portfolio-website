@@ -210,10 +210,6 @@ hr {
     width 0.5s;
 }
 
-a {
-  font-family: 'Poppins';
-}
-
 .arrow-animation::after {
   content: '>';
   color: inherit;
@@ -240,8 +236,12 @@ h1 {
   text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.8);
 }
 
-a {
+.underline-color {
   text-decoration: underline;
   text-decoration-color: #646cff;
   text-underline-offset: 3px;
+}
+
+.poppins {
+  font-family: 'Poppins';
 }

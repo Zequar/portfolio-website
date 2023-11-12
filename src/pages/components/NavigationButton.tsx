@@ -9,7 +9,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faHeart,
   faEnvelope,
-  faBook,
   faStar,
   faBars,
   faForward,
