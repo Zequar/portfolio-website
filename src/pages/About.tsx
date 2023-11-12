@@ -34,7 +34,7 @@ function Story({
 }) {
   return (
     <FadeInSection>
-      <div className="p-8 justify-center bg-black rounded-3xl shadow-xl w-90 md:w-2/3 mx-4 md:mx-auto">
+      <div className="flex flex-col p-8 justify-center bg-black rounded-3xl shadow-xl w-90 md:w-2/3 mx-4 md:mx-auto">
         <h4 className="text-3xl">{title}</h4>
         <p
           className="text-gray-200  my-4 text-justify"
@@ -302,8 +302,8 @@ function About() {
             linkLabel={`Get in contact`}
             description={{
               __html: `
-          <p>Next, I plan to keep on learning about Blockchain and affirming my accumulated
-           knowledge with a first professional experience in the field. Want to be part of my
+          <p>I'm currently looking for a mission to confirm my Blockchain skills with a first
+           professional experience in the field. Want to be part of my
             future ? Don't be shy ! </p>
           `,
             }}
