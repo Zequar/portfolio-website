@@ -2,8 +2,6 @@ import NavigationButton from './components/NavigationButton'
 import FadeInSection from './components/FadeInSection'
 import CV from '../assets/Martin Galoux English Resume.pdf'
 import Photo from '../assets/Photo Martin Colossel.jpg'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEthereum, faReact } from '@fortawesome/free-brands-svg-icons'
 
 function Line() {
   return (
