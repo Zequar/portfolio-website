@@ -103,6 +103,7 @@ const NavigationButton = () => {
             top: '2rem',
             zIndex: '999',
           }}
+          className='hover:scale-110'
         >
           <img width={40} src={Logo} />
         </Button>
@@ -117,7 +118,8 @@ const NavigationButton = () => {
           top: '3rem',
           zIndex: '999',
         }}
-        onClick={() => setIsDrawerOpen(!isDrawerOpen)}
+          className='hover:scale-110'
+          onClick={() => setIsDrawerOpen(!isDrawerOpen)}
       >
         <FontAwesomeIcon icon={isDrawerOpen ? faForward : faBars} size="3x" />
       </Button>

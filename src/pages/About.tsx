@@ -2,6 +2,8 @@ import NavigationButton from './components/NavigationButton'
 import FadeInSection from './components/FadeInSection'
 import CV from '../assets/Martin Galoux English Resume.pdf'
 import Photo from '../assets/Photo Martin Colossel.jpg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEthereum, faReact } from '@fortawesome/free-brands-svg-icons'
 
 function Line() {
   return (
@@ -72,8 +74,9 @@ function About() {
             products. <br />
             <br />
           </p>
-          <p>
-            Check my current tech stack and experiences in&nbsp;
+          <p >
+            My current technical skills revolves around 
+             Ethereum, Solidity, React & TypeScript. See more in&nbsp;
             <a
               href={CV}
               download={'Hire me !'}
@@ -87,8 +90,7 @@ function About() {
           <div className="tech-stack-icons flex gap-4"></div>
           <br />
           <p>
-            <b>Don't be shy !</b> Scroll down to discover my journey as a
-            developer.
+            <b>Don't be shy !</b> Scroll down to discover my journey.
           </p>
         </div>
 
