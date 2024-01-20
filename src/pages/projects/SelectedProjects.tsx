@@ -89,10 +89,10 @@ function SelectedProjects() {
           projectType="💼 Freelance project"
         />
       </m.ul>
-      <Link to='/projects' className='self-end mt-4'>
-      <p className='underline'>
-        Discover more projects ➡️
-      </p>
+      <Link to="/projects" className="self-end mt-4">
+        <p className="border-b border-[#646cff] arrow-animation">
+          &nbsp;&nbsp;Discover more projects
+        </p>
       </Link>
     </section>
   )

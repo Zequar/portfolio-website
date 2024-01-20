@@ -209,29 +209,17 @@ hr {
   transform: scale(1.05);
 }
 
-.arrow-hover:hover span:last-child {
-  opacity: 1;
-  transform: translateX(0);
-  width: auto;
-}
-
-.arrow-hover span:last-child {
-  opacity: 0;
-  transform: translateX(-1rem);
-  transition:
-    opacity 0.5s,
-    transform 0.5s,
-    width 0.5s;
-}
-
 .arrow-animation::after {
   content: '>';
   color: inherit;
   transition: 400ms;
   opacity: 0;
+  width: 0;
 }
 
 .arrow-animation:hover::after {
+  padding-right: 8px;
+  width: auto;
   opacity: 1;
   margin-left: 8px;
 }
