@@ -4,7 +4,7 @@ import { exchangeProjectData } from './ProjectsData'
 
 function Exchange() {
   return (
-    <div className="homeWrapper">
+    <div className="centeredSection">
       <NavigationButton />
       <h1>Exchange</h1>
       <ProjectTemplate projectData={exchangeProjectData} />

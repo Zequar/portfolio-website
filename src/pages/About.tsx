@@ -59,7 +59,7 @@ function Story({
 
 function About() {
   return (
-    <div className="homeWrapper w-full md:w-2/3 mx-auto">
+    <div className="centeredSection w-full md:w-2/3 mx-auto">
       <NavigationButton />
       <h1>Who is he ?</h1>
       <div className="flex my-8 p-8 justify-center text-justify align-center bg-black rounded-3xl gap-8">

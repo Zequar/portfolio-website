@@ -30,7 +30,7 @@ function AllProjects() {
   return (
     <div>
       <NavigationButton />
-      <div className="homeWrapper">
+      <div className="centeredSection">
         <div className="overflow-hidden">
           <m.h1
             initial={{ y: '-100%', opacity: 0 }}

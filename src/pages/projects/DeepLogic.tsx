@@ -4,7 +4,7 @@ import { deepLogicProjectData } from './ProjectsData'
 
 function DeepLogic() {
   return (
-    <div className="homeWrapper">
+    <div className="centeredSection">
       <NavigationButton />
       <h1>DeepLogic</h1>
       <ProjectTemplate projectData={deepLogicProjectData} />

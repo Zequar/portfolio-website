@@ -4,7 +4,7 @@ import { liveExtensionProjectData } from './ProjectsData'
 
 function LiveExtension() {
   return (
-    <div className="homeWrapper">
+    <div className="centeredSection">
       <NavigationButton />
       <h1>LiveExtension</h1>
       <ProjectTemplate projectData={liveExtensionProjectData} />

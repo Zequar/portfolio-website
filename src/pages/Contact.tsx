@@ -8,7 +8,7 @@ function Contact() {
   const githubLink = 'https://www.github.com/Zequar/'
 
   return (
-    <div className="homeWrapper">
+    <div className="centeredSection">
       <NavigationButton />
       <h1>Contact Me</h1>
       <section className="text-center">

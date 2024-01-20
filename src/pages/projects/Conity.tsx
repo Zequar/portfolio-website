@@ -4,7 +4,7 @@ import { conityProjectData } from './ProjectsData'
 
 function Conity() {
   return (
-    <div className="homeWrapper">
+    <div className="centeredSection">
       <NavigationButton />
       <h1>Conity</h1>
       <ProjectTemplate projectData={conityProjectData} />

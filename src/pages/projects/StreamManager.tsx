@@ -4,7 +4,7 @@ import { streamManagerProjectData } from './ProjectsData'
 
 function StreamManager() {
   return (
-    <div className="homeWrapper">
+    <div className="centeredSection">
       <NavigationButton />
       <h1>StreamManager</h1>
       <ProjectTemplate projectData={streamManagerProjectData} />
