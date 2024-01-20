@@ -26,7 +26,7 @@ const ProjectItem = ({
   )
 }
 
-function Projects() {
+function AllProjects() {
   return (
     <div>
       <NavigationButton />
@@ -37,7 +37,7 @@ function Projects() {
             animate={{ y: '0%', opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            Projects
+            All Projects
           </m.h1>
         </div>
         <m.ul
@@ -62,4 +62,4 @@ function Projects() {
   )
 }
 
-export default Projects
+export default AllProjects

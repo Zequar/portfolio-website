@@ -16,7 +16,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 import { IconDefinition } from '@fortawesome/free-solid-svg-icons'
-import Logo from '../../assets/logo2spi.svg'
+import Logo from '../../assets/logo.svg'
 import { useAppContext } from '../../AppContext'
 
 const NavigationItem = ({
@@ -103,7 +103,7 @@ const NavigationButton = () => {
             top: '2rem',
             zIndex: '999',
           }}
-          className='hover:scale-110'
+          className="hover:scale-110"
         >
           <img width={40} src={Logo} />
         </Button>
@@ -118,8 +118,8 @@ const NavigationButton = () => {
           top: '3rem',
           zIndex: '999',
         }}
-          className='hover:scale-110'
-          onClick={() => setIsDrawerOpen(!isDrawerOpen)}
+        className="hover:scale-110"
+        onClick={() => setIsDrawerOpen(!isDrawerOpen)}
       >
         <FontAwesomeIcon icon={isDrawerOpen ? faForward : faBars} size="3x" />
       </Button>

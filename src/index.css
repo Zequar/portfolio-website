@@ -17,6 +17,7 @@
   -webkit-text-size-adjust: 100%;
   font-family: 'Lilita One', sans-serif;
   overflow-x: hidden;
+  width: 100%;
 }
 
 ul,
@@ -33,6 +34,11 @@ li {
 
 h1 {
   font-size: 3.2em;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 2.2em;
   line-height: 1.1;
 }
 
@@ -245,4 +251,3 @@ h1 {
 .poppins {
   font-family: 'Poppins';
 }
-

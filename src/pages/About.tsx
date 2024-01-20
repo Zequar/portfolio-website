@@ -30,7 +30,7 @@ function Story({
   title: string
   description: { __html: string | TrustedHTML }
   link?: string
-  linkLabel? : string
+  linkLabel?: string
 }) {
   return (
     <FadeInSection>
@@ -47,7 +47,7 @@ function Story({
             rel="noopener noreferrer"
             className="poppins arrow-animation text-sm underline md:no-underline bg-gray-900 p-3 pl-4 rounded-xl"
           >
-            { linkLabel || 'Explore this project '}
+            {linkLabel || 'Explore this project '}
           </a>
         ) : (
           ''
@@ -72,9 +72,9 @@ function About() {
             products. <br />
             <br />
           </p>
-          <p >
-            My current technical skills revolves around 
-             Ethereum, Solidity, React & TypeScript. See more in&nbsp;
+          <p>
+            My current technical skills revolves around Ethereum, Solidity,
+            React & TypeScript. See more in&nbsp;
             <a
               href={CV}
               download={'Hire me !'}
@@ -249,7 +249,7 @@ function About() {
           `,
             }}
             link="https://www.youtube.com/watch?v=uj4cxxeyHRA"
-            linkLabel='Watch documentary here'
+            linkLabel="Watch documentary here"
           />
           <Line />
           <Story
@@ -298,7 +298,7 @@ function About() {
           <Line />
           <Story
             title="Future Goals 🎯"
-            link='./contact'
+            link="./contact"
             linkLabel={`Get in contact`}
             description={{
               __html: `
