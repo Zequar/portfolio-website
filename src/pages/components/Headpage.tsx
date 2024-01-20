@@ -1,5 +1,4 @@
 import { motion as m } from 'framer-motion'
-import { Link } from 'react-router-dom'
 
 export default function Headpage() {
   return (
