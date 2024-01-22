@@ -4,7 +4,7 @@ import {
   faLinkedin,
   faTwitter,
 } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope, faX } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 const SimpleLink = ({ label, url }: { label: string; url: string }) => {
   return (
