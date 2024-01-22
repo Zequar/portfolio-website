@@ -120,12 +120,14 @@ function TechnoBadges() {
             colorGradient={['#066d89', '#36dff8']}
           />
         </BadgeGrouping>
-        <BadgeGrouping label="Extra">
+        <BadgeGrouping label="CI/CD">
           <Badge
             label="Docker"
             icon={faDocker}
             colorGradient={['#099CEC', '#008BBB']}
           />
+        </BadgeGrouping>
+        <BadgeGrouping label="Design">
           <Badge
             label="Figma"
             icon={faFigma}

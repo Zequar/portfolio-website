@@ -218,7 +218,6 @@ hr {
 }
 
 .arrow-animation:hover::after {
-  padding-right: 8px;
   width: auto;
   opacity: 1;
   margin-left: 8px;

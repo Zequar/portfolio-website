@@ -21,20 +21,20 @@ export default function Headpage() {
           animate={{ y: '0%', opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          I'm <b>Martin</b>, Full Stack Web3 Developer
+          I'm <b>Martin</b>, Full Stack Web3 Developer & Event creator
         </m.p>
         <m.div initial={{ y: '-100%', opacity: 0 }}
           animate={{ y: '0%', opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.3 }}
           className="flex flex-wrap gap-4 mt-4">
-          <span className="poppins text-white border-green-400 border p-2 backdrop-blur-[10px] text-xs rounded-lg">
+          <span className="arrow-animation poppins text-white border-green-400 border p-2 backdrop-blur-[10px] text-xs rounded-lg">
             🟢 Currently open to work
           </span>
           <a
             target="_blank"
             rel="noopener noreferrer"
             href="https://github.com/Zequar"
-            className="poppins text-white border-gray-400 border p-2 backdrop-blur-[10px] text-xs rounded-lg"
+            className="arrow-animation poppins text-white border-gray-400 border p-2 backdrop-blur-[10px] text-xs rounded-lg"
           >
             <FontAwesomeIcon icon={faGithub} size="lg" className="pr-1" />{' '}
             Zequar
@@ -43,7 +43,7 @@ export default function Headpage() {
             target="_blank"
             rel="noopener noreferrer"
             href="https://twitter.com/ZequarDev"
-            className="poppins text-white border-blue-400 border p-2 backdrop-blur-[10px] text-xs rounded-lg"
+            className="arrow-animation  poppins text-white border-blue-400 border p-2 backdrop-blur-[10px] text-xs rounded-lg"
           >
             <FontAwesomeIcon icon={faTwitter} size="lg" color='lightblue' className="pr-1" />{' '}
             ZequarDev
@@ -52,7 +52,7 @@ export default function Headpage() {
             href="mailto:martin.galoux@epitech.eu"
             target="_blank"
             rel="noopener noreferrer"
-            className="poppins text-white border-red-400 border p-2 backdrop-blur-[10px] text-xs rounded-lg"
+            className="arrow-animation poppins text-white border-red-400 border p-2 backdrop-blur-[10px] text-xs rounded-lg"
           >
             <FontAwesomeIcon icon={faEnvelope} size="lg" className="pr-1 text-red-400" />{' '}
             hello@mgaloux.dev
