@@ -3,6 +3,7 @@ import Headpage from './components/Headpage'
 import SelectedProjects from './projects/SelectedProjects'
 import TechnoBadges from './projects/TechnoBadges'
 import Footer from './projects/Footer'
+import Introduction from './Introduction'
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
         <Headpage />
         <SelectedProjects />
         <TechnoBadges />
+        <Introduction />
         {/* 
         <About/>
       <Footer/> */}

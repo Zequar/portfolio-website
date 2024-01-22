@@ -23,10 +23,12 @@ export default function Headpage() {
         >
           I'm <b>Martin</b>, Full Stack Web3 Developer & Event creator
         </m.p>
-        <m.div initial={{ y: '-100%', opacity: 0 }}
+        <m.div
+          initial={{ y: '-100%', opacity: 0 }}
           animate={{ y: '0%', opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="flex flex-wrap gap-4 mt-4">
+          className="flex flex-wrap gap-4 mt-4"
+        >
           <span className="arrow-animation poppins text-white border-green-400 border p-2 backdrop-blur-[10px] text-xs rounded-lg">
             🟢 Currently open to work
           </span>
@@ -45,7 +47,12 @@ export default function Headpage() {
             href="https://twitter.com/ZequarDev"
             className="arrow-animation  poppins text-white border-blue-400 border p-2 backdrop-blur-[10px] text-xs rounded-lg"
           >
-            <FontAwesomeIcon icon={faTwitter} size="lg" color='lightblue' className="pr-1" />{' '}
+            <FontAwesomeIcon
+              icon={faTwitter}
+              size="lg"
+              color="lightblue"
+              className="pr-1"
+            />{' '}
             ZequarDev
           </a>
           <a
@@ -54,7 +61,11 @@ export default function Headpage() {
             rel="noopener noreferrer"
             className="arrow-animation poppins text-white border-red-400 border p-2 backdrop-blur-[10px] text-xs rounded-lg"
           >
-            <FontAwesomeIcon icon={faEnvelope} size="lg" className="pr-1 text-red-400" />{' '}
+            <FontAwesomeIcon
+              icon={faEnvelope}
+              size="lg"
+              className="pr-1 text-red-400"
+            />{' '}
             hello@mgaloux.dev
           </a>
         </m.div>

@@ -1,7 +1,7 @@
 import { Routes, Route, Link, useLocation } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import Home from './pages/Home'
-import About from './pages/About'
+import AboutPage from './pages/AboutPage'
 import Projects from './pages/projects/AllProjects'
 import Contact from './pages/Contact'
 import Blog from './pages/Blog'
@@ -34,7 +34,7 @@ export default function App() {
       <PageTransition in={true} timeout={300} key={key}>
         <Routes>
           <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
+          <Route path="about" element={<AboutPage />} />
           <Route path="projects" element={<Projects />} />
           <Route path="blog" element={<Blog />} />
           <Route path="contact" element={<Contact />} />
