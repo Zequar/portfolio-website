@@ -1,14 +1,14 @@
-import NavigationButton from './components/NavigationButton'
-import Headpage from './components/Headpage'
-import SelectedProjects from './projects/SelectedProjects'
-import TechnoBadges from './projects/TechnoBadges'
-import Footer from './projects/Footer'
-import Introduction from './Introduction'
+import NavigationButton from '../components/NavigationButton'
+import Headpage from '../components/Headpage'
+import SelectedProjects from '../components/projects/SelectedProjects'
+import TechnoBadges from '../components/TechnoBadges'
+import Footer from '../components/Footer'
+import Introduction from '../components/Introduction'
 
 function Home() {
   return (
     <div>
-      <div className="px-[15%]">
+      <div className="w-[100vw] px-[15%]">
         <NavigationButton />
         <Headpage />
         <SelectedProjects />

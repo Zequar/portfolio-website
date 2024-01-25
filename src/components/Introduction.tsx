@@ -1,10 +1,18 @@
 import CV from '../assets/Martin Galoux English Resume.pdf'
 import Photo from '../assets/Photo Martin Colossel.jpg'
+import { motion as m } from 'framer-motion'
 
 function Introduction() {
   return (
     <div>
-      <h1>Who is he ?</h1>
+      <m.h2
+        className="special-underline py-4"
+        initial={{ y: '-100%', opacity: 0 }}
+        animate={{ y: '0%', opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
+        Who is he ?
+      </m.h2>
       <div className="flex my-8 p-8 justify-center text-justify align-center bg-black rounded-3xl gap-8">
         <div>
           <p>

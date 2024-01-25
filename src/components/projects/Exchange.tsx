@@ -1,4 +1,4 @@
-import NavigationButton from '../components/NavigationButton'
+import NavigationButton from '../NavigationButton'
 import ProjectTemplate from './ProjectTemplate'
 import { exchangeProjectData } from './ProjectsData'
 

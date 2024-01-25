@@ -1,4 +1,4 @@
-import NavigationButton from './components/NavigationButton'
+import NavigationButton from '../components/NavigationButton'
 
 function Blog() {
   return (

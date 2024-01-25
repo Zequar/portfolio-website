@@ -1,4 +1,4 @@
-import NavigationButton from './components/NavigationButton'
+import NavigationButton from '../components/NavigationButton'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 

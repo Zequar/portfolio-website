@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { motion as m } from 'framer-motion'
-import { container, item } from '../Animations'
+import { container, item } from './Animations'
 import './Projects.css'
 import ExchangePicture from '../../assets/projects/charts.jpg'
 import MaskottPicture from '../../assets/projects/maskott.png'

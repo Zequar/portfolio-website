@@ -1,4 +1,4 @@
-import FadeInSection from './components/FadeInSection'
+import FadeInSection from '../components/FadeInSection'
 import CV from '../assets/Martin Galoux English Resume.pdf'
 
 function Line() {

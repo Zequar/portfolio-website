@@ -6,11 +6,11 @@ import {
   faFigma,
 } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import NextLogo from '../../assets/NextLogo.png'
-import TailwindLogo from '../../assets/TailwindLogo.png'
-import EtherLogo from '../../assets/EtherLogo.png'
-import SolidityLogo from '../../assets/SolidityLogo.png'
-import CV from '../../assets/Martin Galoux English Resume.pdf'
+import NextLogo from '../assets/NextLogo.png'
+import TailwindLogo from '../assets/TailwindLogo.png'
+import EtherLogo from '../assets/EtherLogo.png'
+import SolidityLogo from '../assets/SolidityLogo.png'
+import CV from '../assets/Martin Galoux English Resume.pdf'
 import { ReactNode } from 'react'
 
 const Badge = ({
@@ -73,16 +73,14 @@ const BadgeGrouping = ({
 function TechnoBadges() {
   return (
     <section className="my-8 flex flex-col">
-      <div className="overflow-hidden flex flex-row justify-between items-center">
-        <m.h2
-          className="special-underline py-4"
-          initial={{ y: '-100%', opacity: 0 }}
-          animate={{ y: '0%', opacity: 1 }}
-          transition={{ duration: 0.5 }}
-        >
-          My Favorite Toolkit
-        </m.h2>
-      </div>
+      <m.h2
+        className="special-underline py-4"
+        initial={{ y: '-100%', opacity: 0 }}
+        animate={{ y: '0%', opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
+        My Favorite Toolkit
+      </m.h2>
       <div className="flex flex-wrap w-full gap-4">
         <BadgeGrouping label="Frontend">
           <Badge

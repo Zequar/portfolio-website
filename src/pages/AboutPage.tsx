@@ -1,6 +1,6 @@
-import NavigationButton from './components/NavigationButton'
+import NavigationButton from '../components/NavigationButton'
 import Story from './Story'
-import Introduction from './Introduction'
+import Introduction from '../components/Introduction'
 
 function AboutPage() {
   return (

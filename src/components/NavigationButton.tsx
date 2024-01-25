@@ -16,8 +16,8 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 import { IconDefinition } from '@fortawesome/free-solid-svg-icons'
-import Logo from '../../assets/logo.svg'
-import { useAppContext } from '../../AppContext'
+import Logo from '../assets/logo.svg'
+import { useAppContext } from '../AppContext'
 
 const NavigationItem = ({
   to,

@@ -2,15 +2,16 @@ import { Routes, Route, Link, useLocation } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import Home from './pages/Home'
 import AboutPage from './pages/AboutPage'
-import Projects from './pages/projects/AllProjects'
+import Projects from './components/projects/AllProjects'
 import Contact from './pages/Contact'
 import Blog from './pages/Blog'
-import Conity from './pages/projects/Conity'
-import Exchange from './pages/projects/Exchange'
-import DeepLogic from './pages/projects/DeepLogic'
-import LiveExtension from './pages/projects/LiveExtension'
-import Maskott from './pages/projects/Maskott'
-import StreamManager from './pages/projects/StreamManager'
+import Conity from './components/projects/Conity'
+import Exchange from './components/projects/Exchange'
+import DeepLogic from './components/projects/DeepLogic'
+import LiveExtension from './components/projects/LiveExtension'
+import Maskott from './components/projects/Maskott'
+import StreamManager from './components/projects/StreamManager'
+import TalentReferral from './pages/TalentReferral'
 
 import './App.css'
 import { AppProvider } from './AppContext'
@@ -20,6 +21,9 @@ import '@fontsource/roboto/300.css'
 import '@fontsource/roboto/400.css'
 import '@fontsource/roboto/500.css'
 import '@fontsource/roboto/700.css'
+import Mentoring from './pages/Mentoring'
+import Testimonials from './pages/Testimonials'
+import TechStack from './pages/TechStack'
 
 export default function App() {
   const location = useLocation()
@@ -44,6 +48,10 @@ export default function App() {
           <Route path="live-extension" element={<LiveExtension />} />
           <Route path="maskott" element={<Maskott />} />
           <Route path="stream-manager" element={<StreamManager />} />
+          <Route path="talents" element={<TalentReferral />} />
+          <Route path="mentoring" element={<Mentoring />} />
+          <Route path="testimonials" element={<Testimonials />} />
+          <Route path="tech-stack" element={<TechStack />} />
           <Route path="*" element={<NoMatch />} />
         </Routes>
       </PageTransition>
