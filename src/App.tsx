@@ -1,10 +1,10 @@
-import { Routes, Route, Link, useLocation } from 'react-router-dom'
-import { useState, useEffect } from 'react'
+import { Routes, Route, Link } from 'react-router-dom'
 import Home from './pages/Home'
 import AboutPage from './pages/AboutPage'
 import Projects from './components/projects/AllProjects'
 import Contact from './pages/Contact'
 import Blog from './pages/Blog'
+import BlogArticle from './pages/BlogArticle'
 import Conity from './components/projects/Conity'
 import Exchange from './components/projects/Exchange'
 import DeepLogic from './components/projects/DeepLogic'
@@ -15,7 +15,6 @@ import TalentReferral from './pages/TalentReferral'
 
 import './App.css'
 import { AppProvider } from './AppContext'
-import PageTransition from './PageTransition'
 
 import '@fontsource/roboto/300.css'
 import '@fontsource/roboto/400.css'
@@ -26,21 +25,16 @@ import Testimonials from './pages/Testimonials'
 import TechStack from './pages/TechStack'
 
 export default function App() {
-  const location = useLocation()
-  const [key, setKey] = useState<string | undefined>(location.key)
 
-  useEffect(() => {
-    setKey(location.key)
-  }, [location.key])
 
   return (
     <AppProvider>
-      <PageTransition in={true} timeout={300} key={key}>
         <Routes>
           <Route index element={<Home />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="projects" element={<Projects />} />
           <Route path="blog" element={<Blog />} />
+          <Route path="blog/:id" element={<BlogArticle />} />
           <Route path="contact" element={<Contact />} />
           <Route path="conity" element={<Conity />} />
           <Route path="exchange" element={<Exchange />} />
@@ -54,12 +48,11 @@ export default function App() {
           <Route path="tech-stack" element={<TechStack />} />
           <Route path="*" element={<NoMatch />} />
         </Routes>
-      </PageTransition>
     </AppProvider>
   )
 }
 
-function NoMatch() {
+export function NoMatch() {
   return (
     <div>
       <h2>Nothing to see here!</h2>

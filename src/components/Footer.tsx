@@ -1,118 +1,70 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faGithub,
   faLinkedin,
   faTwitter,
 } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 import CV from '../assets/Martin Galoux English Resume.pdf'
-import { Link } from 'react-router-dom'
+import { ReactNode } from 'react'
+import { ExternalLink, InnerLink, DownloadLink } from './Links'
 
-const ExternalLink = ({ label, url }: { label: string; url: string }) => {
+const Category = ({
+  label,
+  children,
+}: {
+  label: string
+  children: ReactNode
+}) => {
   return (
-    <a
-      href={url}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="poppins hover:underline text-sm"
-    >
-      <p>{label}</p>
-    </a>
+    <div className="mb-8 flex flex-col">
+      <h3 className="text-2xl pb-2">{label}</h3>
+      {children}
+    </div>
   )
 }
 
 function Footer() {
   return (
-    <section className="mt-16 mb-0 flex flex-col bg-black px-[15%] py-8">
+    <footer className="mt-16 mb-0 flex flex-col bg-black px-[15%] py-8 end-0">
       <div className="flex flex-wrap justify-start gap-32">
-        <div className="mb-8">
-          <h3 className="text-2xl pb-2">Socials</h3>
-          <ul className="flex flex-col gap-1">
-            <li>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/Zequar"
-                className="poppins text-white hover:underline backdrop-blur-[10px] text-xs rounded-lg"
-              >
-                <FontAwesomeIcon icon={faGithub} size="lg" className="pr-2" />
-                Github
-              </a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://twitter.com/ZequarDev"
-                className="  poppins text-white hover:underline  backdrop-blur-[10px] text-xs rounded-lg"
-              >
-                <FontAwesomeIcon icon={faTwitter} size="lg" className="pr-2" />
-                Twitter
-              </a>
-            </li>
-            <li>
-              <a
-                href="mailto:martin.galoux@epitech.eu"
-                target="_blank"
-                rel="noopener noreferrer"
-                className=" poppins text-white hover:underline backdrop-blur-[10px] text-xs rounded-lg"
-              >
-                <FontAwesomeIcon icon={faEnvelope} size="lg" className="pr-2" />
-                Email
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://https://linkedin.com/in/martingaloux"
-                target="_blank"
-                rel="noopener noreferrer"
-                className=" poppins text-white hover:underline  backdrop-blur-[10px] text-xs rounded-lg"
-              >
-                <FontAwesomeIcon icon={faLinkedin} size="lg" className="pr-2" />
-                LinkedIn
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div className="mb-8">
-          <h3 className="text-2xl pb-2">Reach out</h3>
+        <Category label="Socials">
           <ExternalLink
-            label="Book a call"
+            label="Github"
+            icon={faGithub}
+            url="https://github.com/Zequar"
+          />
+          <ExternalLink
+            label="Twitter"
+            icon={faTwitter}
+            url="https://twitter.com/ZequarDev"
+          />
+          <ExternalLink
+            label="Email"
+            icon={faEnvelope}
+            url="mailto:hello@mgaloux.dev"
+          />
+          <ExternalLink
+            label="LinkedIn"
+            icon={faLinkedin}
+            url="https://https://linkedin.com/in/martingaloux"
+          />
+          <ExternalLink
+            label="Calendly"
+            icon={faPhone}
             url="https://calendly.com/mgaloux/introducing-meeting"
           />
-          <ExternalLink label="Shoot an email" url="mailto:hello@mgaloux.dev" />
-        </div>
-        <div className="mb-8 flex flex-col">
-          <h3 className="text-2xl pb-2">Services</h3>
-          <ExternalLink label="Blog" url="/blog" />
-          <Link to="/mentoring" className="text-sm poppins hover:underline">
-            Mentoring
-          </Link>
-          <Link to="/talents" className="text-sm poppins hover:underline">
-            Talent Referral
-          </Link>
-        </div>
-        <div className="mb-8 flex flex-col">
-          <h3 className="text-2xl pb-2 ">Career</h3>
-          <a
-            href={CV}
-            download={'Hire me !'}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:underline poppins text-sm"
-          >
-            my CV
-          </a>
-          <Link to="/testimonials" className="text-sm poppins hover:underline">
-            Testimonials
-          </Link>
-          <Link to="/certificates" className="text-sm poppins hover:underline">
-            Certificates
-          </Link>
-          <Link to="/tech-stack" className="text-sm poppins hover:underline">
-            Full Technical Stack
-          </Link>
-        </div>
+        </Category>
+        <Category label="Services">
+          <InnerLink url="/blog" label="Blog" />
+          <InnerLink url="/mentoring" label="Mentoring" />
+          <InnerLink url="/talents" label="Talent Referral" />
+        </Category>
+        <Category label="Career">
+          <DownloadLink label="Download CV" filename="Hire me !" url={CV} />
+          <InnerLink url="/testimonials" label="Testimonials" />
+          <InnerLink url="/certificates" label="Certificates" />
+          <InnerLink url="/tech-stack" label="Full Technical Stack" />
+        </Category>
       </div>
 
       <p className="self-center text-gray-600">
@@ -121,7 +73,7 @@ function Footer() {
           rights reserved
         </i>
       </p>
-    </section>
+    </footer>
   )
 }
 

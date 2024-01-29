@@ -21,7 +21,7 @@ export default function Headpage() {
           animate={{ y: '0%', opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          I'm <b>Martin</b>, Full Stack Web3 Developer & Event creator
+          I'm <b>Martin</b>, Full Stack Web3 Developer
         </m.p>
         <m.div
           initial={{ y: '-100%', opacity: 0 }}
