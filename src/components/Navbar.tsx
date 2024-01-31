@@ -176,8 +176,7 @@ const Navbar = () => {
         <BurgerMenu/>
       </div>
       <div className='sm:hidden md:block'>
-        <Links>
-        </Links>
+        <Links/>
       </div>
     </header>
   )
