@@ -7,7 +7,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 export default function Headpage() {
   return (
     <div>
-      <section className="mt-32">
+      <section className="pt-32">
         <m.h1
           initial={{ y: '-100%', opacity: 0 }}
           animate={{ y: '0%', opacity: 1 }}

@@ -1,11 +1,11 @@
-import NavigationButton from '../NavigationButton'
+import Navbar from '../Navbar'
 import ProjectTemplate from './ProjectTemplate'
 import { conityProjectData } from './ProjectsData'
 
 function Conity() {
   return (
     <div className="centeredSection">
-      <NavigationButton />
+      <Navbar />
       <h1>Conity</h1>
       <ProjectTemplate projectData={conityProjectData} />
     </div>

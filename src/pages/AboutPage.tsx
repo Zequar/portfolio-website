@@ -1,11 +1,11 @@
-import NavigationButton from '../components/NavigationButton'
+import Navbar from '../components/Navbar'
 import Story from './Story'
 import Introduction from '../components/Introduction'
 
 function AboutPage() {
   return (
     <div className="centeredSection w-full md:w-2/3 mx-auto">
-      <NavigationButton />
+      <Navbar />
       <Introduction />
       <Story />
     </div>

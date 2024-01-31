@@ -1,4 +1,4 @@
-import NavigationButton from '../components/NavigationButton'
+import Navbar from '../components/Navbar'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 
@@ -9,7 +9,7 @@ function Contact() {
 
   return (
     <div className="centeredSection">
-      <NavigationButton />
+      <Navbar />
       <h1>Contact Me</h1>
       <section className="text-center">
         <p className="px-10  w-90vw">

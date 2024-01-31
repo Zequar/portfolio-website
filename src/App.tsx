@@ -23,9 +23,10 @@ import '@fontsource/roboto/700.css'
 import Mentoring from './pages/Mentoring'
 import Testimonials from './pages/Testimonials'
 import TechStack from './pages/TechStack'
+import ScrollToAnchor from './components/ScrollToAnchor'
 
 export default function App() {
-
+  ScrollToAnchor()
 
   return (
     <AppProvider>

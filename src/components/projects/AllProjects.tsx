@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import NavigationButton from '../NavigationButton'
+import Navbar from '../Navbar'
 import { motion as m } from 'framer-motion'
 import { container, item } from '../Animations'
 import './Projects.css'
@@ -29,7 +29,7 @@ const ProjectItem = ({
 function AllProjects() {
   return (
     <div>
-      <NavigationButton />
+      <Navbar />
       <div className="centeredSection">
         <div className="overflow-hidden">
           <m.h1

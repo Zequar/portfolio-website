@@ -1,5 +1,5 @@
 import Footer from '../components/Footer'
-import NavigationButton from '../components/NavigationButton'
+import Navbar from '../components/Navbar'
 import { Link } from 'react-router-dom'
 
 const BlogPreview = ({
@@ -34,7 +34,7 @@ const BlogPreview = ({
 function Blog() {
   return (
     <>
-      <NavigationButton />
+      <Navbar />
       <main className="w-[100vw] px-[15%] my-32">
         <h1>Martin's Tech Thoughts</h1>
         <p className="text-gray-500 my-2">

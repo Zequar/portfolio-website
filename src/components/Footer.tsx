@@ -25,9 +25,9 @@ const Category = ({
 
 function Footer() {
   return (
-    <footer className="mt-16 mb-0 flex flex-col bg-black px-[15%] py-8 end-0">
+    <footer className="mt-16 mb-0 flex flex-col bg-black px-[15%] py-8 end-0" id='contact'>
       <div className="flex flex-wrap justify-start gap-32">
-        <Category label="Socials">
+        <Category label="Contact">
           <ExternalLink
             label="Github"
             icon={faGithub}

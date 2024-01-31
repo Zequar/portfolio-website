@@ -1,11 +1,11 @@
-import NavigationButton from '../NavigationButton'
+import Navbar from '../Navbar'
 import ProjectTemplate from './ProjectTemplate'
 import { maskottProjectData } from './ProjectsData'
 
 function Maskott() {
   return (
     <div className="centeredSection">
-      <NavigationButton />
+      <Navbar />
       <h1>Maskott</h1>
       <ProjectTemplate projectData={maskottProjectData} />
     </div>

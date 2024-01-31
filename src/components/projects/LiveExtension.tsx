@@ -1,11 +1,11 @@
-import NavigationButton from '../NavigationButton'
+import Navbar from '../Navbar'
 import ProjectTemplate from './ProjectTemplate'
 import { liveExtensionProjectData } from './ProjectsData'
 
 function LiveExtension() {
   return (
     <div className="centeredSection">
-      <NavigationButton />
+      <Navbar />
       <h1>LiveExtension</h1>
       <ProjectTemplate projectData={liveExtensionProjectData} />
     </div>

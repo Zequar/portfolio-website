@@ -63,7 +63,25 @@ const NavigationItem = ({
   )
 }
 
-const NavigationButton = () => {
+const LogoBackHomeButton = () => {
+  return (
+    <Link to="/#home">
+        <Button
+          sx={{
+            width: '60px',
+            height: '60px',
+            color: 'white',
+            zIndex: '999',
+          }}
+          className="hover:scale-110"
+        >
+          <img width={40} src={Logo} />
+        </Button>
+      </Link>
+  )
+}
+
+const BurgerMenu = () => {
   const { isDrawerOpen, setIsDrawerOpen } = useAppContext()
 
   const drawerContentStyle = {
@@ -72,6 +90,7 @@ const NavigationButton = () => {
     color: 'white',
     // Define other styles for drawer content as needed
   }
+
 
   const list = (
     <List
@@ -92,22 +111,6 @@ const NavigationButton = () => {
 
   return (
     <>
-      <Link to="/">
-        <Button
-          sx={{
-            width: '60px',
-            height: '60px',
-            color: 'white',
-            position: 'absolute',
-            left: '2rem',
-            top: '2rem',
-            zIndex: '999',
-          }}
-          className="hover:scale-110"
-        >
-          <img width={40} src={Logo} />
-        </Button>
-      </Link>
       <Button
         sx={{
           width: '40px',
@@ -147,4 +150,37 @@ const NavigationButton = () => {
   )
 }
 
-export default NavigationButton
+const Links = () => {
+  return (
+    <div className=''>
+      <div className='flex flex-row text-xl gap-8 items-center'>
+        <div className='hover:underline'>
+          <Link to='/projects'>Projects</Link>
+        </div>
+        <div className='hover:underline'>
+          <Link to='/blog'>Blog</Link> 
+        </div>
+        <div className='hover:underline'>
+          <Link to='/contact'>Contact me</Link>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+const Navbar = () => {
+  return (
+    <header className='bg-black bg-opacity-60 border-b border-gray-700 w-screen px-[15%] flex justify-between items-center h-16 fixed top-0 z-20'>
+      <LogoBackHomeButton/>
+      <div className='sm:block md:hidden'>
+        <BurgerMenu/>
+      </div>
+      <div className='sm:hidden md:block'>
+        <Links>
+        </Links>
+      </div>
+    </header>
+  )
+}
+
+export default Navbar

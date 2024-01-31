@@ -1,4 +1,4 @@
-import NavigationButton from '../components/NavigationButton'
+import Navbar from '../components/Navbar'
 import { useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import MarkDown from 'markdown-to-jsx'
@@ -45,7 +45,7 @@ function BlogArticle() {
 
   return (
     <>
-      <NavigationButton />
+      <Navbar />
       <main className="w-[100vw] px-[15%] my-32 min-h-[30vh] lg:min-h-[50vh]">
         { error &&
           <NoMatch/>
